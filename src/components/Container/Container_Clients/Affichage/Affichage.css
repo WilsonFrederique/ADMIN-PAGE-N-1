@@ -1,0 +1,19 @@
+.Affichages{
+    position: absolute;
+    background: rgb(13, 49, 83);
+    width: 90%;
+    height: 100vh;
+    margin-left: 6rem;
+    margin-top: 0.1rem;
+    padding: 1em;
+}
+
+.Affichages div h1{
+    color: #fff;
+    position: relative;
+}
+
+.Affichages div{
+    color: yellow;
+    position: relative;
+}

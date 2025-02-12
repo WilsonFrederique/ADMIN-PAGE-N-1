@@ -1,0 +1,143 @@
+.container {
+    width: 100%;
+    position: absolute;
+    margin: 0;
+    top: 0;
+    right: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.topContainner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 7rem;
+    margin-top: 1.5rem;
+}
+
+.topContainner .inputBox{
+    width: 350px;
+    max-width: 350px;
+    height: 45px;
+    position: relative;
+}
+
+.topContainner .inputBox input{
+    box-shadow: 0 0 10px rgba(61, 61, 61, 0.4);
+    width: 100%;
+    height: 100%;
+    background: #04111C;
+    border: none;
+    outline: none;
+    border-radius: 0.5em;
+    color: #d0cfd4;
+    font-size: 16px;
+    padding: 0 40px;
+}
+
+.topContainner .inputBox input::placeholder{
+    color: #757380;
+}
+
+.topContainner .inputBox i{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #757380;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 45px;
+    font-size: 20px;
+}
+
+.topContainner .profileContainer{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #d0cfd4;
+}
+
+.topContainner .profileContainer .profileIcon{
+    width: 40px;
+    height: 40px;
+    background: #04111C;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 8px rgba(70, 69, 69, 0.4);
+    line-height: 45px;
+    text-align: center;
+    font-size: 18px;
+    position: relative;
+}
+
+.topContainner .profileContainer .profileIcon::before{
+    position: absolute;
+    content: '';
+    top: 9px;
+    right: 9px;
+    width: 8px;
+    height: 8px;
+    background: #b1147d;
+    border: 2px solid #19162c;
+    border-radius: 50%;
+}
+
+.topContainner .profileContainer .profileImage{
+    width: 40px;
+    height: 40px;
+    background: rgb(182, 182, 182);
+    margin: 0 10px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);    
+}
+
+.topContainner .profileContainer .profileImage img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.topContainner .profileContainer .profileName{
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.topContainner .profileContainer .menuChevron{
+    cursor: pointer;
+    font-size: 12px;
+    margin: 0 10px;
+}
+
+@media screen and (max-width: 525px) {
+    .container{
+        width: 100%;
+    }
+
+    .topContainner .inputBox{
+        width: 100px;
+        z-index: 101;
+    }
+
+    .topContainner .profileContainer .profileName{
+        display: none;
+    }
+
+    .topContainner .profileContainer .menuChevron{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 755px) {
+    .container{
+        width: 100%;
+    }
+
+    .topContainner .inputBox{
+        width: 120px;
+        z-index: 101;
+    }
+}
