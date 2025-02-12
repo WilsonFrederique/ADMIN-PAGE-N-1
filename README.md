@@ -1,4 +1,4 @@
 # React + TypeScript + Vite
 
-## FRONTEND
+## FRONTEND DEV
 ![Chargement](../front/README/images/1.png)
